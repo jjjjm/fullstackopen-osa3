@@ -17,7 +17,7 @@ morgan.token('body', (req, res) => JSON.stringify(req.body))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'))
 
 
-const PORT = process.env.PORT || process.env.PORT
+const PORT = process.env.PORT
 
 app.get('/api/persons', (request, response, next) => {
     Person.find({})
