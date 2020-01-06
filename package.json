@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "logs:prod" : "heroku logs --tail",
-    "deploy" : "git push heroku master",
-    "build:ui" : "rm -rf build && cd /home/local/jermusto/Desktop/fs-open/fullstackopen/osa2/puhelinluettelo && npm run build --prod && cp -r build /home/local/jermusto/Desktop/fs-open/fullstackopen-osa3",
+    "logs:prod": "heroku logs --tail",
+    "deploy": "git push heroku master",
+    "build:ui": "rm -rf build && cd /home/local/jermusto/Desktop/fs-open/fullstackopen/osa2/puhelinluettelo && npm run build --prod && cp -r build /home/local/jermusto/Desktop/fs-open/fullstackopen-osa3",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "watch": "nodemon index.js"
@@ -23,7 +23,9 @@
   "homepage": "https://github.com/jjjjm/fullstackopen-osa3#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.8.4",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
